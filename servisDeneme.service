@@ -1,0 +1,12 @@
+#!/bin/bash
+
+[Unit]
+Description=myService
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/sys-deneme.sh start
+ExecStop=/home/beratg/hedef.txt stop
+
+[Install]
+WantedBy=multi-user.target
